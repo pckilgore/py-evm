@@ -25,7 +25,7 @@ class Stack(object):
 
     def __init__(self):
         """
-        Use a deque for performance
+        Use a deque for performance.
         """
         self.values = []
         # self.values = collections.deque()
