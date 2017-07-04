@@ -1,5 +1,5 @@
 import logging
-# import collections
+import collections
 
 from evm import constants
 from evm.exceptions import (
@@ -27,8 +27,7 @@ class Stack(object):
         """
         Use a deque for performance.
         """
-        self.values = []
-        # self.values = collections.deque()
+        self.values = collections.deque()
 
     def __len__(self):
         return len(self.values)
